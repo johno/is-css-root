@@ -1,15 +1,18 @@
 {
   "name": "is-css-root",
   "description": "Check whether a CSS selector is the :root",
-  "author": "John Otander",
+  "author": {
+    "name": "John Otander",
+    "email": "johnotander@gmail.com",
+    "url": "johnotander.com"
+  },
   "version": "1.0.0",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "tape test/test.js | tap-dot",
-    "jshint": "standard"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -27,8 +30,6 @@
   "homepage": "https://github.com/johnotander/is-css-root",
   "dependencies": {},
   "devDependencies": {
-    "tape": "*",
-    "tap-dot": "*",
-    "standard": "*"
+    "ava": "^0.2.0"
   }
 }
